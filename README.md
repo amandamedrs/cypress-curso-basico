@@ -1,12 +1,8 @@
-# Testes automatizados com Cypress - Básico
+# Testes automatizados com Cypress 
 
-👋 Seja bem-vindo(a)!
+👋 Olá! Esse repositório reúne meus estudos e anotações do curso de testes automatizados com Cypress (básico).
 
-É muito bom tê-lo(a) aqui. Tenho certeza que você vai adorar este curso. ❤️
-
-## O que você vai aprender
-
-Durante o curso de testes automatizados com Cypress (básico), você vai aprender:
+## O que estou aprendendo
 
 - Como configurar um projeto Cypress do zero
 - Como visitar páginas locais e remotas
@@ -18,12 +14,49 @@ Durante o curso de testes automatizados com Cypress (básico), você vai aprende
 - Como rodar testes simulando as dimensões de um dispositivo móvel
 - Como resolver os mesmos problemas de diferentes formas, conhecendo a [API do Cypress](https://docs.cypress.io/api/table-of-contents)
 - Como executar os testes em um _pipeline_ de integração contínua sempre que mudanças ocorrerem no código da aplicação (ou dos testes)
-- Como criar uma documentação mínima para seu projeto de testes automatizados
+- Como criar uma documentação mínima para projetos de testes automatizados
 
-## Vamos começar?
+## Como executar o projeto
 
-Vá para a seção [estrutura do curso](./lessons/_course-structure_.md).
+### Pré-requisitos
 
-___
+- [Node.js](https://nodejs.org/) (versão LTS recomendada)
+- [Git](https://git-scm.com/)
 
-Este é mais um curso da [**Escola Talking About Testing**](https://udemy.com/user/walmyr).
+### Instalação
+
+```bash
+git clone https://github.com/seu-usuario/seu-repositorio.git
+cd seu-repositorio
+npm install
+```
+
+### Executando os testes
+
+| Modo | Comando | Descrição |
+|---|---|---|
+| Interativo | `npm run cy:open` | Abre o Cypress App com interface visual |
+| Mobile | `npm run cy:open:mobile` | Interface visual simulando viewport mobile |
+| Headless | `npm test` | Execução via terminal, sem interface gráfica |
+
+## Estrutura do projeto
+
+```
+cypress/
+├── e2e/          # Arquivos de testes
+├── fixtures/     # Dados estáticos para os testes
+└── support/      # Configurações e comandos customizados
+
+lessons/
+├── 01.md
+├── 02.md
+└── ...           # Anotações de cada aula
+```
+
+## Aulas
+
+As anotações de cada aula estão na pasta [`lessons/`](./lessons/).
+
+---
+
+Curso ministrado pela [**Escola Talking About Testing**](https://talking-about-testing.vercel.app/).
